@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="join-club.css">
+</head>
+<body>
+
+
+     <header class="sticky-header">
+
+<nav class="navbar" id="main-navbar">
+
+  <!-- Left Logo -->
+  <a href="index.html" class="logo-link">
+    <img class="codeforgelogo" src="code_forgeniamt_logo.jpg" alt="">
+  </a>
+
+  <!-- Center Heading -->
+  <h1>National Institute of Advanced Manufacturing Technology (Formerly NIFFT)</h1>
+
+  <!-- Right Logo -->
+  <a href="index.html" class="logo-link">
+    <img class="college-logo"
+      src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg/960px-National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg.png"
+      alt="">
+  </a>
+
+  <!-- Hamburger Button (now inside navbar, near right logo) -->
+  <button class="hamburger" id="menu-btn">☰</button>
+
+</nav>
+
+
+
+
+
+ 
+ <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" style="background-color: rgb(27, 48, 169) ; color: rgb(255, 255, 255); font-size: 17px;">Communities</button>
+        <div class="dropdown-content">
+          <a href="software-dev.html">Software Development</a>
+          <a href="ai-datascience.html">AI & Data Science</a>
+          <a href="cyber-blockchain.html">Cybersecurity & Blockchain</a>
+          <a href="electronics-auto.html">Electronics & Automation</a>
+        </div>
+      </div>
+
+      <a href="events.html">Events</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Communities</a>
+    <a href="events.html">Events</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+    <section>
+        <form>
+
+        <label>Full Name:</label><br>
+        <input type="text" name="name" required style="width:100%; padding:8px; margin-bottom:12px;"><br>
+
+        <label>Email ID:</label><br>
+        <input type="email" name="email" required style="width:100%; padding:8px; margin-bottom:12px;"><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone" required style="width:100%; padding:8px; margin-bottom:12px;"><br>
+
+        <label>Department / Branch:</label><br>
+        <input type="text" name="branch" required style="width:100%; padding:8px; margin-bottom:12px;"><br>
+
+        <label>Year / Semester:</label><br>
+        <input type="text" name="year" required style="width:100%; padding:8px; margin-bottom:12px;"><br>
+
+        <label>College Roll Number:</label><br>
+        <input type="text" name="roll" required style="width:100%; padding:8px; margin-bottom:12px;"><br>
+
+        <label>Why do you want to join the club?</label><br>
+        <textarea name="reason" rows="4" required style="width:100%; padding:8px; margin-bottom:12px;"></textarea><br>
+
+        <button type="submit" 
+            style="background:#4A00E0; color:white; padding:10px 20px; border:none; border-radius:6px; cursor:pointer;">
+            Submit
+        </button>
+
+
+    </form>
+
+    <footer class="footer">
+  <p>&copy; 2025 Code Forge - Official Club of NIAMT, Ranchi.</p>
+  <p class="footer-caption">Built with passion by the Code Forge Web Dev Team.</p>
+</footer>
+    </section>
+
+    <script src="script.js"> </script>
+</body>
+</html>

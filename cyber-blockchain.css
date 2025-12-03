@@ -1,0 +1,491 @@
+/* ===== HEADER / NAVBAR ===== */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fbd88d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* logo | title | logo */
+  align-items: center;
+  padding: 0 1rem;
+  height: 120px;
+  position: relative;
+}
+
+/* Title Center */
+.navbar h1 {
+  font-size: clamp(18px, 2.5vw, 30px);
+  font-weight: 700;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Logos */
+.codeforgelogo,
+.college-logo {
+  height: clamp(60px, 12vw, 110px);
+  border-radius: 50%;
+}
+
+/* Hamburger Default Hidden */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-left: 8px;
+}
+
+/* ----- Mobile / Tablet ----- */
+@media (max-width: 820px) {
+  .hamburger { display: block; }    /* show menu icon */
+  .navbar { gap: 0.3rem; }
+}
+
+/* ----- Extra Small Phones ----- */
+@media (max-width: 540px) {
+  .navbar h1 {
+    font-size: 15px;
+    max-width: 220px;
+  }
+  .codeforgelogo,
+  .college-logo {
+    height: 58px;
+  }
+}
+
+
+
+
+
+
+/* Desktop Navigation */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  position: relative;
+  align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(27, 27, 155);
+    height: 40px;
+    
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--cf-dark);
+  font-weight: 500;
+  transition: 0.25s;
+  color: rgb(255, 255, 255);
+}
+.nav-links a:hover {
+  color: #06eaed;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: #ffffff;
+  min-width: 220px;
+  border-radius: 8px;
+  padding: 0.3rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a {
+  display: block;
+  padding: 0.7rem;
+  border-radius: 6px;
+  color: var(--cf-dark);
+}
+.dropdown.open .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* ===== MOBILE MENU ===== */
+#mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #cb6969;
+  width: 100%;
+}
+#mobile-menu a {
+  padding: 0.9rem;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--cf-dark);
+}
+
+/* ===== RESPONSIVE (Main Fix Here) ===== */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    flex-direction: row; /* ← fixed */
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    padding: 0 0.7rem;
+  }
+
+  .codeforgelogo {
+    height: 70px;
+    order: 1;
+  }
+  .hamburger {
+    order: 2;
+  }
+  .college-logo {
+    height: 70px;
+    order: 3;
+  }
+}
+
+#mobile-menu.show {
+  display: flex;
+}
+
+
+
+
+/* Desktop Navigation */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  align-items: center;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--cf-dark);
+  font-weight: 500;
+  transition: 0.25s;
+  color: white;
+}
+
+.nav-links a:hover {
+  color: #ed6802;
+}
+
+/* Dropdown */
+.dropdown { position: relative; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: #fff;
+  min-width: 220px;
+  border-radius: 8px;
+  padding: .3rem;
+  box-shadow: 0 8px 22px rgba(0,0,0,.2);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: .7rem;
+  border-radius: 6px;
+  color: var(--cf-dark);
+}
+
+.dropdown-content { display: none; }
+.dropdown.open .dropdown-content { display: block; }
+
+
+.dropdown:hover .dropdown-content { 
+  display: block; 
+}
+
+
+
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* ===== MOBILE MENU ===== */
+#mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  width: 100%;
+}
+
+#mobile-menu a {
+  padding: .9rem;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--cf-dark);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:900px) {
+
+  .nav-links { display: none; }
+  .hamburger { display: block; }
+
+  .navbar {
+    flex-direction: row;                     /* ← FIXED (no column) */
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    padding: 0 .8rem;
+  }
+
+  /* maintain row order → logo — hamburger — logo */
+  .codeforgelogo { height: 75px; order: 1; }
+  .hamburger    { order: 2; }
+  .college-logo { height: 75px; order: 3; }
+}
+
+#mobile-menu.show { display: flex; }
+
+
+
+
+
+
+
+
+
+/* ===== COLOR VARIABLES ===== */
+:root {
+  --cf-primary:#0D9488;
+  --cf-dark:#1F2937;
+  --cf-light:#F3F4F6;
+  --cf-white:#ffffff;
+
+  --yellow-600:#d97706;
+  --red-600:#dc2626;
+  --blue-600:#2563eb;
+}
+
+/* ===== GLOBAL UTILITIES ===== */
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.text-center { text-align: center; }
+.text-cf-dark { color: var(--cf-dark); }
+.text-white { color: #fff; }
+
+.mt-4 { margin-top: 1rem; }
+.mt-8 { margin-top: 2rem; }
+.mt-12 { margin-top: 3rem; }
+
+/* ===== CYBER COMMUNITY PAGE ===== */
+.communities-detail-section {
+  padding: 4rem 0;
+  background: #f7f8fa;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Main Community Card */
+.community-detail-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2.5rem;
+  border-left: 7px solid var(--red-600);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  transition: 0.25s ease;
+}
+
+.community-detail-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 32px rgba(0,0,0,0.25);
+}
+
+.community-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  opacity: 0.92;
+}
+
+/* Two-column Info Grid */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+}
+
+/* Subtitles */
+.detail-subtitle {
+  font-size: 1.3rem;
+  font-weight: 650;
+  margin-bottom: 0.8rem;
+}
+
+/* Activities Checklist */
+.activity-list li {
+  list-style: none;
+  margin-bottom: 0.55rem;
+  padding-left: 1.2rem;
+  position: relative;
+  font-size: 1.05rem;
+}
+
+.activity-list li::before {
+  content: "✔";
+  color: var(--red-600);
+  position: absolute;
+  left: 0;
+  font-size: 0.95rem;
+}
+
+/* Tech Stacks Tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Project Highlight */
+.project-highlight {
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+  opacity: 0.85;
+}
+
+/* Community Heads Section */
+.head-grid {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.head-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f1f5f9;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: 0.25s;
+}
+
+.head-card:hover {
+  border-color: var(--red-600);
+  transform: scale(1.04);
+}
+
+.head-name {
+  font-size: 1.1rem;
+  font-weight: 650;
+}
+
+.head-role {
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+/* Button */
+.button-primary.button-lg {
+  padding: 0.9rem 1.7rem;
+  font-size: 1.15rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.button-primary.button-lg:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--cf-dark);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer-caption {
+  font-size: .9rem;
+  opacity: .75;
+  margin-top: 3px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .head-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .head-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}

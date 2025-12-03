@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+     <header class="sticky-header">
+
+<nav class="navbar" id="main-navbar">
+
+  <!-- Left Logo -->
+  <a href="index.html" class="logo-link">
+    <img class="codeforgelogo" src="code_forgeniamt_logo.jpg" alt="">
+  </a>
+
+  <!-- Center Heading -->
+  <h1>National Institute of Advanced Manufacturing Technology (Formerly NIFFT)</h1>
+
+  <!-- Right Logo -->
+  <a href="index.html" class="logo-link">
+    <img class="college-logo"
+      src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg/960px-National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg.png"
+      alt="">
+  </a>
+
+  <!-- Hamburger Button (now inside navbar, near right logo) -->
+  <button class="hamburger" id="menu-btn">☰</button>
+
+</nav>
+
+
+
+
+
+ 
+ <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" style="background-color: rgb(27, 48, 169) ; color: rgb(255, 255, 255); font-size: 17px;">Communities</button>
+        <div class="dropdown-content">
+          <a href="software-dev.html">Software Development</a>
+          <a href="ai-datascience.html">AI & Data Science</a>
+          <a href="cyber-blockchain.html">Cybersecurity & Blockchain</a>
+          <a href="electronics-auto.html">Electronics & Automation</a>
+        </div>
+      </div>
+
+      <a href="events.html">Events</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Communities</a>
+    <a href="events.html">Events</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+  <main>
+    <section id="contact" class="contact-section">
+        <div class="container">
+          <h2 class="section-title text-cf-primary">Get in Touch</h2>
+
+          <div class="contact-grid">
+            <div class="contact-form-container">
+              <h3 class="contact-subtitle text-cf-dark">Send us a Message</h3>
+              <form
+                id="contactForm"
+                action="http://localhost:5000/api/contact"
+                method="POST"
+                class="contact-form-style"
+              >
+                <div>
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="form-input"
+                  />
+                </div>
+                <div>
+                  <label for="email" class="form-label"
+                    >Email (College ID preferred)</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="form-input"
+                  />
+                </div>
+                <div>
+                  <label for="subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    class="form-input"
+                  />
+                </div>
+                <div>
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    class="form-input"
+                  ></textarea>
+                </div>
+                <button type="submit" class="button-primary w-full">
+                  Submit
+                </button>
+                <p id="formMessage" class="form-message-style"></p>
+              </form>
+            </div>
+
+            <div>
+              <h3 class="contact-subtitle text-cf-dark">Our Details</h3>
+              <div class="contact-details-list">
+                <p class="contact-item">
+                  <span class="contact-icon text-cf-primary">📧</span>
+                  <span class="contact-label">Email:</span>
+                  codeforge@niatm.ac.in
+                </p>
+                <p class="contact-item">
+                  <span class="contact-icon text-cf-primary">📍</span>
+                  <span class="contact-label">Location:</span> National
+                  Institute of Advanced Manufacturing Technology (NIAMT),
+                  Ranchi.
+                </p>
+              </div>
+
+              <h3 class="contact-subtitle mt-8 text-cf-dark">Social Media</h3>
+              <div class="social-links">
+                <a href="#" class="social-link">🔗</a>
+                <a href="#" class="social-link">💻</a>
+                <a href="#" class="social-link">📷</a>
+              </div>
+
+              <h3 class="contact-subtitle mt-8 text-cf-dark">Campus Map</h3>
+              <div class="map-placeholder border-cf-primary">
+                <span class="map-text"
+                  >[Google Map Embed Placeholder for NIAMT, Ranchi]</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+    <footer class="footer">
+  <p>&copy; 2025 Code Forge - Official Club of NIAMT, Ranchi.</p>
+  <p class="footer-caption">Built with passion by the Code Forge Web Dev Team.</p>
+</footer>
+  <script src="script.js">  </script>
+</body>
+</html>

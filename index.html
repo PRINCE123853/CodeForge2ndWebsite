@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Forge - NIAMT Ranchi's Official Coding Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+
+
+    <header class="sticky-header">
+
+<nav class="navbar" id="main-navbar">
+
+  <!-- Left Logo -->
+  <a href="index.html" class="logo-link">
+    <img class="codeforgelogo" src="code_forgeniamt_logo.jpg" alt="">
+  </a>
+
+  <!-- Center Heading -->
+  <h1>National Institute of Advanced Manufacturing Technology (Formerly NIFFT)</h1>
+
+  <!-- Right Logo -->
+  <a href="index.html" class="logo-link">
+    <img class="college-logo"
+      src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg/960px-National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg.png"
+      alt="">
+  </a>
+
+  <!-- Hamburger Button (now inside navbar, near right logo) -->
+  <button class="hamburger" id="menu-btn">☰</button>
+
+</nav>
+
+
+
+
+
+ 
+ <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" style="background-color: rgb(57, 83, 231) ; color: rgb(255, 255, 255); font-size: 17px;font-size: 17px;">Communities</button>
+        <div class="dropdown-content">
+          <a href="software-dev.html">Software Development</a>
+          <a href="ai-datascience.html">AI & Data Science</a>
+          <a href="cyber-blockchain.html">Cybersecurity & Blockchain</a>
+          <a href="electronics-auto.html">Electronics & Automation</a>
+        </div>
+      </div>
+
+      <a href="events.html">Events</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Communities</a>
+    <a href="events.html">Events</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+
+
+
+    <main>
+      <section id="home" class="hero-section">
+        <!-- Dark Overlay -->
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.523); /* Change opacity here */
+            z-index: 1;
+          "
+        ></div>
+
+        <div
+          class="container hero-content"
+          style="position: relative; z-index: 2"
+        >
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="text-cf-primary">Code Forge</span><br />
+            </h1>
+
+            <p class="hero-subtitle">
+              NIAMT Ranchi’s home of coding, creativity, and technology —
+              dedicated to fostering a dynamic and impactful coding culture on
+              campus.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="join-club.html" class="button-primary">Join the Club</a>
+              <a href="upcommingEvent.html" class="button-secondary">Upcoming Events</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission-section">
+        <div class="container">
+          <div class="text-center mb-12">
+            <h2 class="section-title text-white">Our Mission</h2>
+            <p class="mission-text">
+              We strive to build a vibrant coding culture on campus that
+              inspires innovation, teamwork, and real-world learning. Through
+              collaboration and leadership, we empower students to create, grow,
+              and lead with confidence.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <p class="stat-value counter-val" data-target="100">150</p>
+              <p class="stat-label">Students Trained</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-value counter-val" data-target="10">75</p>
+              <p class="stat-label">Workshops Held</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-value counter-val" data-target="50">100</p>
+              <p class="stat-label">Projects Built</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section id="communities-brief" class="py-20 bg-cf-light">
+        <div class="container">
+          <h2 class="section-title text-cf-dark">Our Communities</h2>
+          <div class="communities-grid-brief">
+            <div class="community-card-brief border-cf-primary">
+              <h3 class="card-title">Software Development</h3>
+              <p class="card-description">
+                Focuses on full-stack web/app development, competitive
+                programming, and creating scalable software solutions.
+              </p>
+              <p class="card-hashtags text-cf-primary-">
+                #WebDev #DSA #MobileApp
+              </p>
+            </div>
+            <div class="community-card-brief border-yellow-600">
+              <h3 class="card-title">AI & Data Science</h3>
+              <p class="card-description">
+                Explores Machine Learning, Deep Learning, Big Data analytics,
+                and building intelligent systems for real-world problems.
+              </p>
+              <p class="card-hashtags text-yellow-600">
+                #MachineLearning #DeepLearning #DataAnalytics
+              </p>
+            </div>
+            <div class="community-card-brief border-red-600">
+              <h3 class="card-title">Cybersecurity & Blockchain</h3>
+              <p class="card-description">
+                Teaches ethical hacking, network security, cryptography, and
+                decentralized application development using blockchain
+                technology.
+              </p>
+              <p class="card-hashtags text-red-600">
+                #Hacking #Security #Web3 #Crypto
+              </p>
+            </div>
+            <div class="community-card-brief border-blue-600">
+              <h3 class="card-title">Electronics & Automation</h3>
+              <p class="card-description">
+                Covers IoT, Robotics, embedded systems, and automation using
+                microcontrollers and hardware programming.
+              </p>
+              <p class="card-hashtags text-blue-600">
+                #IoT #Robotics #EmbeddedSystems #Automation
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+
+<footer class="footer">
+  <p>&copy; 2025 Code Forge - Official Club of NIAMT, Ranchi.</p>
+  <p class="footer-caption">Built with passion by the Code Forge Web Dev Team.</p>
+</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
